@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003B6D;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: #6699CC;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #6699CC;
+            top: 40px;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul ul li {
+            width: 150px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #676767;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .cta-button {
+            background-color: #003B6D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        .contact-form input, .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .breadcrumb {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #003B6D;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Paradigm Pet Professionals</h1>
+    <p>Evidence-based pet care advice for every pet lover</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#dog-owners">Dog Owners</a></li>
+        <li><a href="#cat-owners">Cat Owners</a></li>
+        <li><a href="#bird-owners">Bird Owners</a></li>
+        <li><a href="#contact">Consultation</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Paradigm Pet Professionals</h2>
+    <p>At Paradigm Pet Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts offer one-on-one consultations and provide tailored evidence-based pet care.</p>
+    <button class="cta-button">Book a Consultation</button>
+</section>
+
+<section id="dog-owners">
+    <div class="breadcrumb">
+        <a href="#home">Home</a> > Dog Owners
+    </div>
+    <h2>Dog Owners - Care Tips</h2>
+    <p>Learn more about caring for your dog’s diet, exercise, grooming, and vaccinations throughout their life stages.</p>
+    <button class="cta-button">Book a Consultation</button>
+</section>
+
+<section id="cat-owners">
+    <div class="breadcrumb">
+        <a href="#home">Home</a> > Cat Owners
+    </div>
+    <h2>Cat Owners - Care Tips</h2>
+    <p>Explore tips on feeding, grooming, and health for your cat based on their age and breed.</p>
+    <button class="cta-button">Book a Consultation</button>
+</section>
+
+<section id="bird-owners">
+    <div class="breadcrumb">
+        <a href="#home">Home</a> > Bird Owners
+    </div>
+    <h2>Bird Owners - Relational and Emotional Care</h2>
+    <p>Birds are social creatures. Learn about their emotional needs, care routines, and how to prevent depression.</p>
+    <button class="cta-button">Book a Consultation</button>
+</section>
+
+<section id="contact">
+    <h2>Request a Virtual Consultation</h2>
+    <div class="contact-form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+            <label for="timezone">Time Zone:</label>
+            <select id="timezone" name="timezone" required>
+                <option value="">Select your time zone</option>
+                <option value="EST">Eastern Standard Time (EST)</option>
+                <option value="PST">Pacific Standard Time (PST)</option>
+                <option value="CST">Central Standard Time (CST)</option>
+            </select>
+
+            <label for="petname">Pet's Name:</label>
+            <input type="text" id="petname" name="petname" placeholder="Your Pet's Name" required>
+
+            <label for="pettype">Pet's Type:</label>
+            <select id="pettype" name="pettype" required>
+                <option value="">Select your pet type</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bird">Bird</option>
+            </select>
+
+            <label for="petage">Pet's Age:</label>
+            <input type="number" id="petage" name="petage" placeholder="Pet's Age" required>
+
+            <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Paradigm Pet Professionals &copy; 2024</p>
+</footer>
+
+</body>
+</html>
